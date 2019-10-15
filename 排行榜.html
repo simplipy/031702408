@@ -1,0 +1,264 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>排行榜</title>
+<style type="text/css">
+body{
+    background-image: url('排行榜背景.jpg');
+    background-repeat: no-repeat;
+    background-size: 1650px 940px;
+ 
+}
+.a {
+	width:300px;
+	background-color: rgb(211, 81, 91);
+	background-repeat: no-repeat;
+	background-position: 95px; center;
+	/*background-image: url(../%E7%BB%83%E4%B9%A05%EF%BC%9A%E5%88%B6%E4%BD%9C%E7%95%85%E9%94%80%E4%B9%A6%E6%8E%92%E8%A1%8C%E6%A6%9C/%E5%9B%BE%E7%89%87%E7%B4%A0%E6%9D%90/bang.gif);*/
+	padding:10px;
+    margin-top:5%;
+    margin-left:40%;
+    text-align:center;
+    color :white;
+    font-family:"楷体";
+    font-size:50px;
+}
+
+.tet {
+	font-family: "Comic Sans MS", cursive;
+	font-size: 12px;
+	font-style: normal;
+	line-height: 28px;
+	font-weight: normal;
+	font-variant: normal;
+	color: #00F;
+}
+.返回游戏{
+    background-color:rgb(243, 235, 100);
+    position:absolute;
+    top:2%;
+    right:5%;
+    text-align:center;
+    color:white;
+    font-family:"楷体";
+    font-size : 30px;
+    border-radius: 25px;
+    background: url(按钮背景.jpg);
+    background-position: left top;
+    background-repeat: repeat;
+    width: 170px;
+    height: 70px;  
+    transition: all 0.5s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer; 
+    display: inline-block;
+}
+.返回游戏 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.返回游戏 span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.返回游戏:hover span {
+  padding-right: 25px;
+}
+
+.返回游戏:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.往期对战结果{
+    background-color:rgb(243, 235, 100);
+    position:absolute;
+    top:13%;
+    right:5%;
+    text-align:center;
+    color:white;
+    font-family:"楷体";
+    font-size : 30px;
+    border-radius: 25px;
+    background: url(按钮背景.jpg);
+    background-position: left top;
+    background-repeat: repeat;
+    width: 170px;
+    height: 85px;  
+    transition: all 0.5s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer; 
+    display: inline-block;  
+}
+.往期对战结果 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.往期对战结果 span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.往期对战结果:hover span {
+  padding-right: 25px;
+}
+
+.往期对战结果:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+.历史详细战况{
+    background-color:rgb(243, 235, 100);
+    position:absolute;
+    top:23%;
+    right:5%;
+    text-align:center;
+    color:white;
+    font-family:"楷体";
+    font-size : 30px;
+    border-radius: 25px;
+    background: url(按钮背景.jpg);
+    background-position: left top;
+    background-repeat: repeat;
+    width: 170px;
+    height: 85px;  
+    transition: all 0.5s;
+    -webkit-transition-duration: 0.4s; /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer; 
+    display: inline-block;  
+}
+.历史详细战况 span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.历史详细战况 span:after {
+  content: '»';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.历史详细战况:hover span {
+  padding-right: 25px;
+}
+
+.历史详细战况:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+table.list {
+	font-family: "楷体";
+	font-size:30px;
+	color:#333333;
+    border-style:hidden;
+	border-width: 1px;
+	border-color: #999999;
+	border-collapse: collapse;
+    background-color: rgb(252, 251, 239);
+    background-size:100% 100%;
+    border-radius: 20px;
+    margin-top:0%;
+    margin-left:0%;
+    text-align:center;
+    width: 1000px;
+    height:630px;
+   
+}
+table.list th {
+	border-width: 2px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #bbb8b8;
+}
+table.list td {
+
+	border-width: 2px;
+	padding: 8px;
+	border-style: solid;
+	border-color: #999999;
+}
+.b{
+  width: 1020px;
+  height:630px;
+  overflow-y:scroll;
+  overflow-x:hidden;
+  margin-top:2%;
+  margin-left:23%;
+}
+.get1{
+    background-color:rgb(243, 235, 100);
+    position:absolute;
+    top:18%;
+    right:25%;
+    text-align:center;
+    color:white;
+    font-family:"楷体";
+    font-size : 25px;
+    border-radius: 18px;
+    background: url(按钮背景.jpg);
+    background-position: left top;
+    background-repeat: repeat;
+    width: 130px;
+    height: 50px; 
+}
+</style>
+
+</style>
+</head>
+<body>
+    <script src="排行榜.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdn.bootcss.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+  	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+        <a href="登陆后界面.html">
+            <button class = "返回游戏" ><span>返回游戏 </span></button>
+        </a>
+        <a href="往期对战结果.html">
+            <button class = "往期对战结果" ><span>往期对战 结果 </span></button>
+        </a>
+        <a href="历史详细战况.html">
+            <button class = "历史详细战况" ><span>历史详细 战况 </span></button>
+        </a>
+        <div class="a">排 行 榜</div>
+        <div class="b">
+        <table class="list" id="table">
+        <tr style ="height:5px;">
+            <th> 排 名 </th> <th>用 户 名 </th> <th>积 分</th>
+        </tr>
+        <tr>
+          </tr>
+    </table>
+        </div>
+    <div>
+      <a><button type="button" class="get1" onclick="get()">获取</button></a>
+    </div>
+
+<ul class="tet">
+
+</ul>
+</div>
+</body>
+</html>
